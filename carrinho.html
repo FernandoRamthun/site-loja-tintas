@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Ramthun Tintas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo" class="img-logo">
+                <span class="slogan">Tintas Industriais desde 1987</span>
+            </div>
+            
+            <nav class="navegacao">
+                <a href="index.html" class="botao-nav">Home</a>
+                <a href="produtos.html" class="botao-nav">Produtos</a>
+                <a href="institucional.html" class="botao-nav">Institucional</a>
+                <a href="contato.html" class="botao-nav">Contato</a>
+                <a href="carrinho.html" class="botao-nav carrinho">
+                    <img src="imagens/icone-carrinho.png" alt="Carrinho">
+                    <span class="contador">2</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-pagina">Seu Carrinho</h1>
+        
+        <div class="itens-carrinho">
+            <!-- Item 1 -->
+            <div class="item-carrinho">
+                <img src="imagens/epoxi-1.jpg" alt="Epóxi Standard" class="img-item">
+                <div class="info-item">
+                    <h3>Epóxi Standard</h3>
+                    <p>Código: EPX-STD-18L</p>
+                    <div class="controles">
+                        <div class="quantidade">
+                            <button class="btn-quantidade">-</button>
+                            <span>1</span>
+                            <button class="btn-quantidade">+</button>
+                        </div>
+                        <p class="preco-item">R$ 189,90</p>
+                        <button class="btn-remover">Remover</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item-carrinho">
+                <img src="imagens/termica-1.jpg" alt="Térmica 300°C" class="img-item">
+                <div class="info-item">
+                    <h3>Térmica 300°C</h3>
+                    <p>Código: TER-300-900ML</p>
+                    <div class="controles">
+                        <div class="quantidade">
+                            <button class="btn-quantidade">-</button>
+                            <span>2</span>
+                            <button class="btn-quantidade">+</button>
+                        </div>
+                        <p class="preco-item">R$ 279,90</p>
+                        <button class="btn-remover">Remover</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resumo-carrinho">
+            <div class="total">
+                <h3>Total:</h3>
+                <p class="valor-total">R$ 749,70</p>
+            </div>
+            <a href="contato.html" class="botao-finalizar">Finalizar Compra</a>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="info-contato">
+                <h3>Contato</h3>
+                <p>📞 55 47 98897-9599</p>
+                <p>✉️ ramthuntintas@gmail.com</p>
+                <a href="index.html" class="botao-voltar">Voltar para Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

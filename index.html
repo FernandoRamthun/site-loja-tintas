@@ -4,101 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramthun Tintas</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .layout_principal{
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: calc(100svh - 120px);
-        }
-        
-        #box_produto{
-            display: flex;
-            height: 450px;
-            width: 920px;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .box_produtos{
-            display: flex;
-            border-radius: 10px;
-            width: 200px;
-            height: 300px;
-            margin: auto;
-            box-shadow: 0 0 10px 0 black;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: all 0.5s ease;
-        }
-        
-        #box6{
-            display: flex;
-            justify-content: center;
-            background-color: rgba(77, 88, 252, 0.5);
-            width: 100svw;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
-    <div id="menu_cabecalho">
-        <div id="logo"><img src="imagens/logo.png" alt="Ramthun Tintas"></div>
-        <div id="icones">
-            <div id="whats"><a href="https://web.whatsapp.com/"><img src="imagens/whatsapp.png" alt="WhatsApp"></a></div>
-            <div id="carrinho"><a href="carrinho.html"><img src="imagens/carrinho.png" alt="Carrinho"></a></div>
-        </div>
-        <div id="opcoes">
-            <div id="botao_home">Home</div>
-            <div id="botao_produtos">Produtos</div>
-            <div id="botao_institucional">Institucional</div>
-            <div id="botao_contato">Contato</div>
-        </div>
-    </div>
-
-    <div class="layout_principal">
-        <!-- Conteúdo Principal -->
+    <header class="cabecalho">
         <div class="container">
-            <h1>Tintas Industriais Profissionais</h1>
-            <div class="produtos">
-                <div class="box_produtos">
-                    <div class="img_produto"><img src="imagens/epoxi.jpg" alt="Tinta Epóxi"></div>
-                    <div class="infos">
-                        <div>Tinta Epóxi 18L</div>
-                        <div>Resistência Química</div>
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo" class="img-logo">
+                <span class="slogan">Tintas Industriais desde 1987</span>
+            </div>
+            
+            <nav class="navegacao">
+                <a href="index.html" class="botao-nav">Home</a>
+                <a href="produtos.html" class="botao-nav">Produtos</a>
+                <a href="institucional.html" class="botao-nav">Institucional</a>
+                <a href="contato.html" class="botao-nav">Contato</a>
+                <a href="carrinho.html" class="botao-nav carrinho">
+                    <img src="imagens/icone-carrinho.png" alt="Carrinho">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="texto-banner">
+                    <h1>Tintas Industriais de Alta Resistência</h1>
+                    <p class="subtitulo">Soluções profissionais para ambientes extremos</p>
+                    <div class="destaques-banner">
+                        <span>+150°C</span>
+                        <span>Anti-corrosão</span>
+                        <span>5 Anos Garantia</span>
                     </div>
-                    <div class="adicionar">COMPRAR</div>
+                    <a href="produtos.html" class="botao-destaque">Ver Catálogo</a>
                 </div>
-                <!-- Adicione mais produtos seguindo o mesmo padrão -->
+                <img src="imagens/tinta-industrial.png" alt="Tintas" class="img-banner">
+            </div>
+        </section>
+
+        <!-- Linhas de Produtos -->
+        <section class="linhas-produtos">
+            <div class="container">
+                <h2>Nossas Linhas de Produtos</h2>
+                <div class="grid-linhas">
+                    <div class="card-linha">
+                        <img src="imagens/epoxi.jpg" alt="Epóxi">
+                        <h3>Epóxi Industrial</h3>
+                        <p>Resistência química e mecânica</p>
+                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
+                    </div>
+
+                    <div class="card-linha">
+                        <img src="imagens/poliuretano.jpg" alt="Poliuretano">
+                        <h3>Poliuretano</h3>
+                        <p>Proteção contra intempéries</p>
+                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
+                    </div>
+
+                    <div class="card-linha">
+                        <img src="imagens/anticorrosiva.jpg" alt="Anti-corrosiva">
+                        <h3>Anti-corrosiva</h3>
+                        <p>Proteção metálica de longo prazo</p>
+                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
+                    </div>
+
+                    <div class="card-linha">
+                        <img src="imagens/termica.jpg" alt="Térmica">
+                        <h3>Isolamento Térmico</h3>
+                        <p>Redução de transferência de calor</p>
+                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="info-contato">
+                <h3>Contato</h3>
+                <p>📞 55 47 98897-9599</p>
+                <p>✉️ ramthuntintas@gmail.com</p>
+            </div>
+            <div class="info-endereco">
+                <h3>Endereço</h3>
+                <p>Rua Anfiloquio Nunes Pires, 54</p>
+                <p>Gaspar - SC</p>
             </div>
         </div>
-
-        <!-- Rodapé -->
-        <div class="box" id="box6">
-            <div id="contato_box6">
-                <div><img src="imagens/logo.png" alt="Logo"></div>
-                <div>
-                    <b>Contato</b><br>
-                    📞 Telefone: (47) 98897-9599<br>
-                    📧 E-mail: ramthuntintas@gmail.com<br>
-                    <b>Endereço</b><br>
-                    Rua Anfilóquio Nunes Pires, 54<br>
-                    Gaspar - Santa Catarina
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Scripts de navegação
-        document.getElementById("botao_home").addEventListener("click", () => window.location.href = "index.html");
-        document.getElementById("botao_produtos").addEventListener("click", () => window.location.href = "produtos.html");
-        document.getElementById("botao_institucional").addEventListener("click", () => window.location.href = "institucional.html");
-        document.getElementById("botao_contato").addEventListener("click", () => window.location.href = "contato.html");
-    </script>
+    </footer>
 </body>
 </html>
