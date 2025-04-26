@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramthun Tintas</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Ramthun Tintas</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-    <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="container">
             <div class="logo">
@@ -16,7 +15,7 @@
             </div>
             
             <nav class="navegacao">
-                <a href="index.html" class="botao-nav">Home</a>
+                <a href="index.html" class="botao-nav ativo">Home</a>
                 <a href="produtos.html" class="botao-nav">Produtos</a>
                 <a href="institucional.html" class="botao-nav">Institucional</a>
                 <a href="contato.html" class="botao-nav">Contato</a>
@@ -27,74 +26,36 @@
         </div>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <!-- Banner -->
-        <section class="banner">
-            <div class="container">
-                <div class="texto-banner">
-                    <h1>Tintas Industriais de Alta Resistência</h1>
-                    <p class="subtitulo">Soluções profissionais para ambientes extremos</p>
-                    <div class="destaques-banner">
-                        <span>+150°C</span>
-                        <span>Anti-corrosão</span>
-                        <span>5 Anos Garantia</span>
-                    </div>
-                    <a href="produtos.html" class="botao-destaque">Ver Catálogo</a>
-                </div>
-                <img src="imagens/tinta-industrial.png" alt="Tintas" class="img-banner">
-            </div>
+    <main class="container">
+        <section class="destaque-home">
+            <h2>Descubra as Melhores Tintas para seu Projeto</h2>
+            <p>Somos especialistas em soluções para indústrias e comércio. Encontre a tinta perfeita para sua necessidade.</p>
         </section>
 
-        <!-- Linhas de Produtos -->
-        <section class="linhas-produtos">
-            <div class="container">
-                <h2>Nossas Linhas de Produtos</h2>
-                <div class="grid-linhas">
-                    <div class="card-linha">
-                        <img src="imagens/epoxi.jpg" alt="Epóxi">
-                        <h3>Epóxi Industrial</h3>
-                        <p>Resistência química e mecânica</p>
-                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
-                    </div>
-
-                    <div class="card-linha">
-                        <img src="imagens/poliuretano.jpg" alt="Poliuretano">
-                        <h3>Poliuretano</h3>
-                        <p>Proteção contra intempéries</p>
-                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
-                    </div>
-
-                    <div class="card-linha">
-                        <img src="imagens/anticorrosiva.jpg" alt="Anti-corrosiva">
-                        <h3>Anti-corrosiva</h3>
-                        <p>Proteção metálica de longo prazo</p>
-                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
-                    </div>
-
-                    <div class="card-linha">
-                        <img src="imagens/termica.jpg" alt="Térmica">
-                        <h3>Isolamento Térmico</h3>
-                        <p>Redução de transferência de calor</p>
-                        <a href="produtos.html" class="botao-linha">Ver Produtos</a>
-                    </div>
-                </div>
+        <section class="grid-produtos">
+            <div class="card-produto">
+                <img src="imagens/produto1.jpg" alt="Produto 1">
+                <h3>Tinta Epóxi Anticorrosiva</h3>
+            </div>
+            <div class="card-produto">
+                <img src="imagens/produto2.jpg" alt="Produto 2">
+                <h3>Tinta Térmica para Caldeiras</h3>
+            </div>
+            <div class="card-produto">
+                <img src="imagens/produto3.jpg" alt="Produto 3">
+                <h3>Tinta Acrílica para Exteriores</h3>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="rodape">
         <div class="container">
             <div class="info-contato">
                 <h3>Contato</h3>
                 <p>📞 55 47 98897-9599</p>
+                <p>💬 WhatsApp: (47) 98897-9599</p>
                 <p>✉️ ramthuntintas@gmail.com</p>
-            </div>
-            <div class="info-endereco">
-                <h3>Endereço</h3>
-                <p>Rua Anfiloquio Nunes Pires, 54</p>
-                <p>Gaspar - SC</p>
+                <a href="index.html" class="botao-voltar">Voltar para Home</a>
             </div>
         </div>
     </footer>
