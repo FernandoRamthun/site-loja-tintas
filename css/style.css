@@ -1,0 +1,697 @@
+/* Reset Geral */
+/* Zera margens e paddings padrão e define box-sizing como border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+/* Define fonte padrão, cor do texto e cor de fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+/* Container principal */
+/* Centraliza o conteúdo e limita largura máxima */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+/* Área fixa no topo da página com sombra */
+.cabecalho {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Área da logo */
+/* Exibe logo e slogan lado a lado */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Imagem do logo */
+/* Define altura da logo mantendo proporção */
+.img-logo {
+    height: 80px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Slogan */
+/* Estiliza o texto ao lado da logo */
+.slogan {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-left: 3px solid #e67e22;
+    padding-left: 20px;
+}
+
+/* Navegação */
+/* Define estilo dos links de navegação */
+.navegacao {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Botão de navegação */
+/* Botão de menu padrão com fundo escuro */
+.botao-nav {
+    padding: 10px 20px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Efeito hover no botão */
+/* Muda cor ao passar o mouse */
+.botao-nav:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Botão ativo */
+/* Estilo para botão da página ativa */
+.botao-nav.ativo {
+    background: #e67e22;
+}
+
+/* Ícone do carrinho */
+/* Define tamanho do ícone no menu */
+.carrinho img {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+/* Banner principal */
+/* Define estrutura do banner na Home com duas colunas */
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* Título do banner */
+/* Estilo do título grande na Home */
+.texto-banner h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Subtítulo do banner */
+/* Estilo do subtítulo abaixo do título */
+.subtitulo {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Destaques no banner */
+/* Cria etiquetas de destaque no banner */
+.destaques-banner {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Cada destaque individual */
+/* Estilo de selo com fundo laranja */
+.destaques-banner span {
+    background: #e67e22;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Imagem do banner */
+/* Faz imagem ocupar toda largura possível */
+.img-banner {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid de linhas de produto */
+/* Organiza categorias em 4 colunas */
+.grid-linhas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+}
+
+/* Linha de produto */
+/* Caixa para linha de produtos */
+.linha-produto {
+    background: #fff;
+    border: 2px solid #e67e22;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 40px 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Informações da linha */
+/* Centraliza texto do título da linha */
+.info-linha {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid de produtos */
+/* Organiza os produtos em 3 colunas */
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Cartão de produto */
+/* Estilo dos cards de produto */
+.card-produto {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+/* Efeito hover no card */
+/* Eleva o card ao passar o mouse */
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Imagem do produto */
+/* Ajusta tamanho e proporção da imagem */
+.card-produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Preço do produto */
+/* Estiliza preço em destaque */
+.preco {
+    color: #e67e22;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Botão detalhes produto */
+/* Botão de ver mais detalhes */
+.botao-linha {
+    display: inline-block;
+    background: #34495e;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Efeito hover no botão */
+/* Muda para laranja ao passar o mouse */
+.botao-linha:hover {
+    background: #e67e22;
+}
+/* Itens do carrinho */
+/* Organiza os itens em grid com espaço */
+.itens-carrinho {
+    display: grid;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* Cada item no carrinho */
+/* Exibe produto, informações e controles lado a lado */
+.item-carrinho {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imagem do produto no carrinho */
+/* Define tamanho fixo para imagens */
+.img-item {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Controles de quantidade e ações */
+/* Agrupa botões de controle e informações */
+.controles {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Controle de quantidade */
+/* Área para aumentar/diminuir quantidade */
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botões de quantidade */
+/* Botões para + e - quantidade */
+.btn-quantidade {
+    padding: 5px 15px;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Preço do item */
+/* Estilo para preço dentro do carrinho */
+.preco-item {
+    color: #e67e22;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/* Botão remover item */
+/* Estilo para botão de remover produto */
+.btn-remover {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Resumo do carrinho */
+/* Bloco que mostra o total da compra */
+.resumo-carrinho {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* Botão de finalizar compra */
+/* Estilo do botão verde para fechar pedido */
+.botao-finalizar {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+/* Breadcrumb */
+/* Estiliza a trilha de navegação */
+.breadcrumb {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Área de detalhes do produto */
+/* Organiza imagem e informações lado a lado */
+.detalhe-produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+/* Galeria do produto */
+/* Organiza imagem principal e miniaturas em coluna */
+.galeria-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Imagem principal */
+/* Imagem grande do produto com bordas arredondadas */
+.imagem-principal {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Miniaturas do produto */
+/* Linha com imagens menores do produto */
+.miniaturas {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo das miniaturas */
+/* Define tamanho das miniaturas e interação */
+.miniaturas img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* Efeito hover nas miniaturas */
+/* Borda laranja ao passar o mouse */
+.miniaturas img:hover {
+    border-color: #e67e22;
+}
+
+/* Avaliação do produto */
+/* Área que mostra estrelas de avaliação */
+.avaliacao {
+    margin: 15px 0;
+}
+
+/* Estrelas de avaliação */
+/* Cor e tamanho das estrelas */
+.estrelas {
+    color: #f1c40f;
+    font-size: 1.2rem;
+}
+
+/* Ações do produto */
+/* Área com botões (comprar, adicionar ao carrinho) */
+.acoes-produto {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Especificações técnicas */
+/* Caixa com detalhes técnicos do produto */
+.especificacoes-tecnicas {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Grid das especificações */
+/* Organiza características em duas colunas */
+.grid-especificacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Cada item de especificação */
+/* Estilo de cada linha de especificação */
+.espec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+/* Grid de contato */
+/* Organiza formulário e informações em duas colunas */
+.grid-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+/* Formulário de contato */
+/* Caixa branca com sombra para o formulário */
+.formulario-contato {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Campo do formulário */
+/* Espaçamento entre campos */
+.campo-form {
+    margin-bottom: 20px;
+}
+
+/* Label do campo */
+/* Deixa o nome do campo em negrito */
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs e textarea */
+/* Define o estilo dos campos de entrada de dados */
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botão enviar formulário */
+/* Estiliza botão de envio */
+.botao-enviar {
+    background: #34495e;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Informações da empresa */
+/* Caixa para contatos como telefone, e-mail, endereço */
+.info-empresa {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Grid dos detalhes de contato */
+/* Organiza ícones e informações */
+.detalhes-contato {
+    display: grid;
+    gap: 25px;
+}
+
+/* Cada item de contato */
+/* Organiza ícone e texto lado a lado */
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ícones dos contatos */
+/* Define tamanho dos ícones (telefone, whatsapp, email) */
+.item-contato img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+/* Seção sobre a empresa */
+/* Limita a largura para melhor leitura */
+.sobre-empresa {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Linha do tempo */
+/* Barra vertical para eventos históricos */
+.linha-do-tempo {
+    border-left: 3px solid #e67e22;
+    padding-left: 30px;
+    margin: 40px 0;
+}
+
+/* Evento na linha do tempo */
+/* Caixa para cada evento */
+.evento {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Marcador de evento */
+/* Bolinha laranja indicando eventos */
+.evento::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    background: #e67e22;
+    border-radius: 50%;
+}
+
+/* Destaque missão e valores */
+/* Área que exibe missão e valores lado a lado */
+.destaque-missao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+/* Cartão da missão */
+/* Estiliza bloco da missão com fundo escuro */
+.card-missao {
+    background: #34495e;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Cartão dos valores */
+/* Estiliza bloco dos valores com fundo branco */
+.card-valores {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Selos de qualidade */
+/* Área com logos de certificações */
+.selos-qualidade {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.selos-qualidade img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* ajustar conforme necessário */
+}
+}
+/* Rodapé */
+/* Fundo escuro e texto branco */
+.rodape {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+/* Informações de contato no rodapé */
+/* Centraliza o texto de contato */
+.info-contato {
+    text-align: center;
+}
+
+/* Botão voltar ao topo ou home */
+/* Estiliza botão laranja para voltar */
+.botao-voltar {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+@media (max-width: 1024px) {
+    /* Grid de linhas de produtos */
+    .grid-linhas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Banner Home */
+    .banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Grids adaptados para 2 colunas */
+    .grid-produtos,
+    .destaque-missao {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    /* Navegação centrada */
+    .navegacao {
+        justify-content: center;
+    }
+
+    /* Grids adaptados para 1 coluna */
+    .grid-produtos,
+    .grid-contato,
+    .destaque-missao,
+    .grid-especificacoes {
+        grid-template-columns: 1fr;
+    }
+
+    /* Carrinho de compras em coluna */
+    .item-carrinho {
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    /* Destaques empilhados */
+    .destaques-banner {
+        flex-direction: column;
+    }
+
+    /* Botões do menu ocupam toda a largura */
+    .botao-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Selos de qualidade empilhados */
+    .selos-qualidade {
+        flex-direction: column;
+        align-items: center;
+    }
+}
